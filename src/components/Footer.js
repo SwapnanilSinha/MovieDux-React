@@ -1,14 +1,13 @@
 import React from "react";
-import '../styles.css';
+import "../styles.css";
 
 export default function Footer() {
-    const currentYear = new Date().getFullYear();
-    const currentDate = new Date().toLocaleDateString();
-    return (
-        <div className="footer">
-            <p className='footer-text'>
-            © {currentYear} Moviedux, All rights reserved.
-            </p>
-        </div>
-    );
+  const currentYear = new Date().getFullYear();
+  return (
+    <div className="footer">
+      <p className="footer-text">
+        © {currentYear} Moviedux, All rights reserved.
+      </p>
+    </div>
+  );
 }
